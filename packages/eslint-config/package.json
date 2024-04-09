@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "files": [
-    "library.js"
+    "library.js",
+    "vite-vue.js"
   ],
   "devDependencies": {
     "@vercel/style-guide": "^5.2.0",
@@ -12,6 +13,10 @@
     "eslint-plugin-only-warn": "^1.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "typescript": "~5.4.0"
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "typescript": "~5.4.0",
+    "eslint": "^8.57.0"
   }
 }
