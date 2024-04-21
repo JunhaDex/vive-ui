@@ -1,5 +1,21 @@
 <template>
   <section>
+    <h1 class="text-3xl">foo</h1>
+    <button class="btn btn-primary">Button</button>
+    <br />
+    <span class="text-2xl">colors</span>
+    <div class="grid grid-cols-10 gap-4 mx-4">
+      <div class="bg-purple-900">01</div>
+      <div class="bg-amber-100">02</div>
+      <div class="bg-amber-200">03</div>
+      <div class="bg-amber-300">04</div>
+      <div class="bg-amber-400">05</div>
+      <div class="bg-amber-500">06</div>
+      <div class="bg-amber-600">07</div>
+      <div class="bg-amber-700">08</div>
+      <div class="bg-amber-800">09</div>
+      <div class="bg-amber-900">10</div>
+    </div>
     <GridContainer col="1" row="1">
       <div>
         <BaseBtn shape="pill" size="xs" level="1" @click="handleClick" :disabled="true"
