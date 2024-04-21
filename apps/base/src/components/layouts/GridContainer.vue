@@ -1,13 +1,19 @@
 <template>
-  <div class="grid rw h-full" :class="`grid-cols-${col} grid-rows-${row}`">
+  <div class="grid rw" :class="`grid-cols-${col} grid-rows-${row} gap-${gap}`">
     <slot />
   </div>
 </template>
 <script lang="ts" setup>
-const props = defineProps<{
-  col: number
-  row: number
-}>()
+const props = withDefaults(
+  defineProps<{
+    col: number
+    row: number
+    gap?: number
+  }>(),
+  {
+    gap: 4
+  }
+)
 </script>
 <style scoped>
 .rw {

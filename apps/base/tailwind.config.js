@@ -5,6 +5,17 @@ export default {
   theme: {
     extend: {}
   },
+  safelist: [
+    {
+      pattern: /grid-(cols|rows)-\d+$/
+    },
+    {
+      pattern: /gap-\d+$/
+    },
+    {
+      pattern: /btn-.*$/
+    }
+  ],
   plugins: [require('daisyui')],
   daisyui: {
     themes: ['light']

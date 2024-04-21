@@ -3,3 +3,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tile {
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-background-soft);
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+}
+
+.tile-unselected {
+    background-color: var(--color-background);
+    box-shadow: inset 0 0 0 3px var(--color-border);
+}
+
+.tile-selected {
+    background-color: var(--color-background);
+    box-shadow: inset 0 0 0 3px var(--color-border-hover);
+}
+
+.tile-disabled {
+    color: var(--vt-c-black-mute);
+    cursor: not-allowed;
+}
+
+.tile-loading {
+    cursor: wait;
+}
+
+.tile-unselected.tile-disabled .tile-selected.tile-disabled {
+    border: 1px solid var(--vt-c-divider-dark-2);
+}
+
+.tile-focused {
+    box-shadow: inset 0 0 0 3px theme('colors.blue.600');
+}
